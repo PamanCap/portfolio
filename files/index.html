@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abiyyu Zahy Al Akram</title>
+    <meta name="description" content="Portofolio Abiyyu Zahy Al Akram, Software Developer yang dapat membangun aplikasi web cepat dan rapi." />
+
+    <!--
+  ===========================================================
+  CARA EDIT CEPAT
+  ===========================================================
+  1. Ganti "Abiyyu Zahy Al Akram" -> nama kamu (cari & replace di seluruh file)
+  2. Foto hero: cari class "photo-img" -> ganti src dengan fotomu sendiri
+  3. Foto proyek: cari class "project-thumb" -> ganti src <img> dengan screenshot proyekmu
+     (letakkan file gambar di folder assets/, ukuran disarankan minimal 800x500px)
+  4. HERO         : id="hero"          -> headline & badge mengambang
+  5. ABOUT        : id="about"         -> bio singkat & info cepat
+  6. PROJECTS     : id="projects"      -> ganti 4 kartu proyek contoh
+  7. SKILLS       : id="skills"        -> sesuaikan daftar skill per kategori
+  8. CERTIFICATIONS : id="certifications" -> ganti dengan sertifikat asli
+  9. CONTACT      : id="contact"       -> email & link sosial media
+  10. Warna & font ada di :root pada CSS, tinggal ubah variabelnya
+  ===========================================================
+-->
+    <link rel="icon" type="image/PNG" href="assets/favicon2cd.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="wrap nav-inner">
+        <a href="#hero" class="brand">Abiyyu Zahy Al Akram</a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="blob" style="width: 420px; height: 420px; top: -120px; right: -140px"></div>
+      <div class="blob" style="width: 300px; height: 300px; bottom: -80px; left: -100px"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <span class="status-pill"><span class="dot"></span>Avaible For Internship</span>
+          <h1>Abiyyu Zahy <br>Al Akram</h1>
+          <p class="lead">
+            I am an Information Technology student at Universitas Brawijaya with a strong passion for web development and application development. I specialize in building modern, responsive, and user-centered applications while
+            continuously exploring new technologies to improve my technical skills. Through academic projects and hands-on experience, I strive to create scalable digital solutions that provide meaningful value and deliver an excellent user
+            experience.
+          </p>
+          <div class="btn-row">
+            <a href="assets/CV_Abiyyu Zahy Al Akram.pdf" download class="btn btn-primary">See My CV →</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="photo-wrap reveal">
+          <div class="photo-ring">
+            <img class="photo-img" alt="Foto profil Abiyyu Zahy" src="assets/Foto_Abiyyu Zahy Al Akram.png" />
+          </div>
+          <div class="float-badge badge-1">
+            <span class="ico"></span> 3.88/4.00 GPA <br />
+            Brawijaya University
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="wrap">
+        <p class="eyebrow">About</p>
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm an Information Technology student at Universitas Brawijaya who is passionate about creating modern websites and applications. I enjoy solving real-world problems through clean, maintainable, and user-focused software while
+              continuously exploring new technologies.
+            </p>
+            <p>My experience includes developing web and mobile applications using Laravel, Flutter, PHP, and MySQL. I am also comfortable working with REST APIs, authentication systems, and responsive web design.</p>
+            <p>
+              To support my development workflow, I frequently use tools such as Git, GitHub, Figma, Postman and Visual Studio Code. I enjoy collaborating in teams, learning from challenges, and continuously improving my skills to build
+              software that is both functional and impactful.
+            </p>
+          </div>
+          <div class="stat-card glass-card reveal">
+            <div class="stat-row"><span class="k">Location</span><span class="v">Indonesia</span></div>
+            <div class="stat-row"><span class="k">Focus</span><span class="v">Software Development</span></div>
+            <div class="stat-row"><span class="k">Languages</span><span class="v">Indonesian, English</span></div>
+            <div class="stat-row"><span class="k">Availability</span><span class="v">Open to Internship & Collaborations</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <div class="blob" style="width: 360px; height: 360px; top: 40px; right: -160px"></div>
+      <div class="wrap">
+        <p class="eyebrow">Projects</p>
+        <h2>My Projects</h2>
+        <p class="lead" style="margin-bottom: 40px">A selection of projects that showcase my approach to solving problems, from internal tools to user-focused applications.</p>
+
+        <div class="project-grid">
+          <div class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <img src="assets/dice&dice cover.png" alt="Tampilan aplikasi Dice & Dice" />
+            </div>
+            <h3>Dice & Dice - Dungeons & Dragons Community Application</h3>
+            <p>Community application that provide to play Dungeons & Dragons and sharing experiences</p>
+            <div class="tag-row"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
+            <div class="project-links"><a href="https://github.com/PamanCap/Dice-Mobile">GitHub →</a></div>
+          </div>
+
+          <div class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <img src="assets/plancraft cover.png" alt="Tampilan website PlanCraft" />
+            </div>
+            <h3>PlanCraft – Daily Planner Website</h3>
+            <p>a daily planner website that helps users to organize their daily activity.</p>
+            <div class="tag-row"><span class="tag">Bootstrap</span><span class="tag">Mysql</span><span class="tag">PHP</span></div>
+            <div class="project-links"><a href="https://github.com/PamanCap/PlanCraft">GitHub →</a></div>
+          </div>
+
+          <div class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <img src="assets/Kosmo cover.png" alt="Tampilan website Kosmo" />
+            </div>
+            <h3>Kosmo - Management Kost Website</h3>
+            <p>a website for managing kost (rental room) properties, including listing, booking, and payment features.</p>
+            <div class="tag-row"><span class="tag">Laravel</span><span class="tag">Tailwind</span></div>
+            <div class="project-links"><a href="https://github.com/PamanCap/KOSMO-web">GitHub →</a></div>
+          </div>
+
+          <div class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <img src="assets/pitstopmbako cover.png" alt="Tampilan website PitstopMbako" />
+            </div>
+            <h3>PitstopMbako - Website E-commerce</h3>
+            <p>Website that sell tobacco products.</p>
+            <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Javascript</span></div>
+            <div class="project-links"><a href="https://github.com/PamanCap/Pitstop-Mbako">GitHub →</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="wrap">
+        <p class="eyebrow">Skills</p>
+        <h2>Skill & tools</h2>
+        <div class="skills-grid">
+          <div class="skill-card glass-card reveal">
+            <h3>Front-end</h3>
+            <div class="pill-row"><span class="pill">HTML & CSS</span><span class="pill">JavaScript</span><span class="pill">Bootstrap</span> <span class="pill">Flutter</span><span class="pill">Tailwind CSS</span></div>
+          </div>
+          <div class="skill-card glass-card reveal">
+            <h3>Back-end</h3>
+            <div class="pill-row"><span class="pill">Mysql</span><span class="pill">Laravel</span><span class="pill">REST API</span> <span class="pill">PHP</span><span class="pill">Firebase</span></div>
+          </div>
+          <div class="skill-card glass-card reveal">
+            <h3>Tools</h3>
+            <div class="pill-row">
+              <span class="pill">Git & GitHub</span><span class="pill">Figma</span>
+              <span class="pill">Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications">
+      <div class="blob" style="width: 340px; height: 340px; bottom: -60px; left: -140px"></div>
+      <div class="wrap">
+        <p class="eyebrow">Certifications</p>
+        <h2>My Certifications</h2>
+        <p class="lead" style="margin-bottom: 40px">Certifications I have completed to enhance my technical skills.</p>
+
+        <div class="cert-grid">
+          <div class="cert-card glass-card reveal">
+            <div class="cert-thumb">
+              <img src="assets/sertif dasar pemrograman web.png" alt="Certificate Pemrograman Web Dasar Dicoding" />
+            </div>
+            <div class="cert-info">
+              <div>
+                <h3>Certificate Pemrograman Web Dasar Dicoding</h3>
+                <div class="cert-meta">Dicoding</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card reveal">
+            <div class="cert-thumb">
+              <img src="assets/sertif dasar js.png" alt="Certificate Dasar JavaScript Dicoding" />
+            </div>
+            <div class="cert-info">
+              <div>
+                <h3>Certificate Dasar JavaScript</h3>
+                <div class="cert-meta">Dicoding</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card reveal">
+            <div class="cert-thumb">
+              <img src="assets/sertif dasar sql.png" alt="Certificate SQL Dicoding" />
+            </div>
+            <div class="cert-info">
+              <div>
+                <h3>Certificate SQL Dicoding</h3>
+                <div class="cert-meta">Dicoding</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card reveal">
+            <div class="cert-thumb">
+              <img src="assets/sertif dasar python.png" alt="Certificate Python Dicoding" />
+            </div>
+            <div class="cert-info">
+              <div>
+                <h3>Certificate Python Dicoding</h3>
+                <div class="cert-meta">Dicoding</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card reveal">
+            <div class="cert-thumb">
+              <img src="assets/sertif pkl.png" alt="Certificate Internship Iconplus" />
+            </div>
+            <div class="cert-info">
+              <div>
+                <h3>Certificate Internship Iconplus</h3>
+                <div class="cert-meta">Iconplus</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card reveal">
+            <div class="cert-thumb">
+              <img src="assets/Abiyyu Zahy Al Akram_ITFEST.png" alt="Certificate Participation ITFEST" />
+            </div>
+            <div class="cert-info">
+              <div>
+                <h3>Certificate Participation ITFEST</h3>
+                <div class="cert-meta">ITFEST</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-box reveal">
+          <h2>Lets Connect.</h2>
+          <p>Open for internship opportunities and collaborations.</p>
+          <div class="social-row">
+            <a href="mailto:abiyyuzahy02@gmail.com">Email</a>
+            <a href="https://github.com/PamanCap" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/abiyyu-zahy-al-akram-a3b16b290?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap footer-inner">
+        <span>© <span id="year"></span> Abiyyu Zahy Al Akram. All rights reserved.</span>
+        <a href="#hero">↑ Kembali ke atas</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
